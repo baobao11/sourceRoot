@@ -1,0 +1,27 @@
+<!--miniprogram/pages/subPages/admin/login/login.wxml-->
+<view>
+  <van-toast id="van-toast" />
+  <van-cell-group>
+    <van-field
+      bind:blur="phoneChange"
+      value="{{phoneNum}}"
+      label="账号"
+      placeholder="请输入账号"
+      border="{{ false }}"
+    />
+    <van-field
+      bind:blur="pwdChange"
+      value="{{ pwd }}"
+      type="password"
+      center
+      clearable
+      label="密码"
+      placeholder="请输入密码"
+      border="{{ false }}"
+      use-button-slot
+      />
+    </van-cell-group>
+    <view>
+      <van-button type="primary" size="large" bindtap="loginFun">登录</van-button>
+    </view>
+</view>

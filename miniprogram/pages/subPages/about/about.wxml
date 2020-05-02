@@ -1,0 +1,18 @@
+<!--miniprogram/pages/subPages/about/about.wxml-->
+<view>
+  <view>
+    <view class="user">普通用户/游客</view>
+    <view>扫描农产品上的二维码，查找到该产品的信息。</view>
+  </view>
+  <view>
+    <view class="user">生产商和经销商</view>
+    <view>生产商在“操作”首页可以：添加产品信息/查看已添加的产品信息。
+          在已添加的产品信息页面可以修改生产商信息。
+          经销商在“操作”首页可以：管理产品信息。
+          生产商添加的产品会展示在“管理产品信息”列表中，经销商可以编辑对应产品的经销商信息。</view>
+  </view>
+  <view>
+    <view class="user">管理员</view>
+    <view>对注册为生产商/经销商的企业信息进行审核，审核通过则企业可以登录账号，进行操作。</view>
+  </view>
+</view>

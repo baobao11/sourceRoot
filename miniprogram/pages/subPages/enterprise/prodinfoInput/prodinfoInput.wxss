@@ -1,0 +1,4 @@
+/* miniprogram/pages/subPages/enterprise/infoInput/infoInput.wxss */
+.btnClass {
+  margin: 10rpx 0;
+}

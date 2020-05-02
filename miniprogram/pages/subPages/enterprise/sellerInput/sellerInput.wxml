@@ -1,0 +1,45 @@
+<!-- 生经销商录入信息页面 -->
+<view>
+  <van-cell-group>
+  <van-field
+    bind:blur="sellNameChange"
+    value="{{ seller.sellName }}"
+    required
+    clearable
+    label="经销商名称"
+    placeholder="经销商名称"
+  />
+  <van-field
+    bind:blur="sellAreaChange"
+    value="{{ seller.sellArea }}"
+    required
+    clearable
+    label="经销商地址"
+    placeholder="请输入经销商地址"
+  />
+  <van-field
+    bind:blur="sellcontactChange"
+    value="{{ seller.sellcontact }}"
+    label="联系方式"
+    placeholder="联系方式"
+    required
+    clearable
+    border="{{ false }}"
+  />
+  <van-field
+    bind:blur="selllicenseChange"
+    value="{{ seller.selllicense }}"
+    label="营业执照号"
+    placeholder="请输入营业执照号"
+    required
+    clearable
+    border="{{ false }}"
+  />
+  <van-cell required title="进货日期">
+    <picker mode="date" value="{{seller.selldate}}" start="1999-01-01" end="2999-12-12" bindchange="datePickerBindchange">{{seller.selldate}}</picker>
+  </van-cell>
+</van-cell-group>
+<view>
+  <van-button class="btnClass" type="primary" size="large" bindtap="submitFunc">提交</van-button>
+</view>
+</view>

@@ -1,0 +1,34 @@
+<!--miniprogram/pages/subPages/enterprise/enterpriseInfo/enterpriseInfo.wxml-->
+<view>
+  <van-cell-group>
+    <van-field
+      bind:blur="compNameChange"
+      value="{{ enterInfo.compName }}"
+      clearable
+      label="企业名称"
+      placeholder="请输入企业名称"
+    />
+    <van-field
+      bind:blur="compDescribeChange"
+      value="{{ enterInfo.compDescribe }}"
+      clearable
+      label="企业描述"
+      placeholder="请输入企业描述"
+    />
+    <van-field
+      bind:blur="compAddrChange"
+      value="{{ enterInfo.compAddr }}"
+      clearable
+      label="企业地址"
+      placeholder="请输入企业地址"
+    />
+    <van-field
+      bind:blur="compContactChange"
+      value="{{ enterInfo.compContact }}"
+      clearable
+      label="企业联系方式"
+      placeholder="请输入企业联系方式"
+    />
+  </van-cell-group>
+  <van-button class="btnClass" size="large" type="primary" bindtap="submitFunc">提交并保存</van-button>  
+</view>

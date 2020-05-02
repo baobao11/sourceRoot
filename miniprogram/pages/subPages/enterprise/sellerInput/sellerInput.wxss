@@ -1,0 +1,4 @@
+/* pages/subPages/sellerInput/sellerInput.wxss */
+.btnClass {
+  margin: 10px 0;
+}

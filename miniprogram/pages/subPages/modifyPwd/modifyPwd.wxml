@@ -1,0 +1,32 @@
+<!--miniprogram/pages/subPages/enterprise/modifyPwd/modifyPwd.wxml-->
+<view>
+  <van-cell-group>
+    <!-- <van-field
+      bind:blur="oldPwdChange"
+      value="{{ oldPwd }}"
+      required
+      clearable
+      label="旧密码"
+      placeholder="请输入旧密码"
+    /> -->
+    <van-field
+      bind:blur="newPwdChange"
+      value="{{ newPwd }}"
+      required
+      clearable
+      label="新密码"
+      placeholder="请输入新密码"
+    />
+    <van-field
+      bind:blur="newPwd2Change"
+      value="{{ newPwd2 }}"
+      required
+      clearable
+      label="确认新密码"
+      placeholder="请再次输入新密码"
+    />
+  </van-cell-group>
+  <view>
+    <van-button size="large" type="primary" bindtap="submitFunc">提交并保存</van-button>  
+  </view>
+</view>

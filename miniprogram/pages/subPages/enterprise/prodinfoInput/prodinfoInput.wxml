@@ -1,0 +1,83 @@
+<!--miniprogram/pages/subPages/enterprise/prodinfoInput/prodinfoInput.wxml-->
+<view>
+  <van-cell-group>
+    <van-field
+      bind:blur="prodNameChange"
+      value="{{ producer.prodName }}"
+      required
+      clearable
+      label="产品名称"
+      placeholder="请输入产品名称"
+    />
+    <van-field
+      bind:blur="originChange"
+      value="{{ producer.prodorigin }}"
+      label="生产地"
+      placeholder="请输入生产地"
+      clearable
+      required
+    />
+    <van-cell required title="生产日期">
+      <picker class="datePicker" mode="date" value="{{producer.proddate}}" start="1999-01-01" end="2999-12-12" bindchange="datePickerBindchange">{{producer.proddate}}</picker>
+    </van-cell>
+    <van-field
+      bind:blur="describeChange"
+      value="{{ producer.proddescribe }}"
+      required
+      clearable
+      label="产品描述"
+      placeholder="请输入产品描述"
+    />
+    <van-field
+      bind:blur="specsChange"
+      value="{{ producer.prodspecs }}"
+      required
+      clearable
+      label="规格"
+      placeholder="请输入产品规格"
+    />
+    <van-field
+      bind:blur="companyChange"
+      value="{{ producer.prodcompany }}"
+      required
+      clearable
+      label="生产企业"
+      placeholder="请输入生产企业名称"
+    />
+    <van-field
+      bind:blur="baseChange"
+      value="{{ producer.prodbase }}"
+      required
+      clearable
+      label="生产基地名称"
+      placeholder="请输入生产基地名称"
+    />
+    <van-field
+      bind:blur="contactChange"
+      value="{{ producer.prodcontact }}"
+      required
+      clearable
+      label="生产商联系方式"
+      placeholder="请输入生产商联系方式"
+    />
+    <van-field
+      bind:blur="licenseChange"
+      value="{{ producer.prodlicense }}"
+      required
+      clearable
+      label="营业执照号"
+      placeholder="请输入营业执照号"
+    />
+    <!-- <van-field
+      bind:blur="picChange"
+      value="{{ producer.prodpic }}"
+      required
+      clearable
+      label="产品图片"
+      placeholder="请输入产品图片"
+    /> -->
+  </van-cell-group>
+  <view>
+    <van-button class="btnClass" type="primary" size="large" bindtap="submitFunc">提交</van-button>
+  </view>
+  </view>

@@ -1,0 +1,12 @@
+<!--miniprogram/pages/subPages/admin/checkDetail/checkDetail.wxml-->
+<scroll-view>
+    <van-cell-group>
+      <van-cell title="手机号码" label="{{currentItem.phoneNum}}"/>
+      <van-cell title="真实姓名" label="{{currentItem.name}}"/>
+      <van-cell title="身份证号码" label="{{currentItem.identityID}}"/>
+      <van-cell title="邮箱" label="{{currentItem.email}}"/>
+      <van-cell title="联系地址" label="{{currentItem.address}}"/>
+      <van-cell title="企业身份" label="{{currentItem.identity}}"/>
+      <van-cell title="主营行业" label="{{currentItem.trade}}"/>
+    </van-cell-group>
+  </scroll-view>

@@ -1,0 +1,19 @@
+<!-- 游客扫码成功页面 -->
+<view>
+  <!-- 提示信息 -->
+  <view class="infoBlock">
+      <icon class="iconMargin" type="success" size="18"/>
+      <text>查询到以下信息</text>
+  </view>
+  <!-- 产品信息展示 -->
+  <scroll-view>
+    <van-cell-group>
+      <!-- 循环遍历product对象，显示信息 -->
+      <van-cell wx:for="{{product}}" wx:for-index="key" wx:for-item="value"
+      title="{{key}}" label="{{value}}"/>        
+    </van-cell-group>
+  </scroll-view>
+  <view wx:if="{{identity === 2 || identity === 3}}" class="btnClass">
+    <van-button type="primary" plain  size="large" bindtap="inputInfoFunc">录入信息</van-button>
+  </view>
+</view>

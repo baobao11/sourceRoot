@@ -1,0 +1,9 @@
+<view>
+    <view class="bigIcon">
+        <icon type="warn" size="50"/>
+    </view>
+    <view class="infoBlock">
+        <icon class="iconMargin" type="warn" size="18"/>
+        <text>抱歉，查询不到该农产品的信息</text>
+    </view>
+</view>

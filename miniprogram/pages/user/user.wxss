@@ -1,0 +1,23 @@
+.userTop {
+  width: 750rpx;
+  height: 375rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.centerTop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loginReg {
+  /* display: flex; */
+}
+.circle {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  border: 1px solid white;
+  background-color: rebeccapurple;
+}

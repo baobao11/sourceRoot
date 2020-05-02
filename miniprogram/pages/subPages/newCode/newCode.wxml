@@ -1,0 +1,19 @@
+<!-- 录入成功页面，生成最新二维码 -->
+<view>
+  <view class="bigIcon">
+    <icon type="success" size="50"/>
+  </view>
+  <view class="infoBlock">
+      <icon class="iconMargin" type="success" size="18"/>
+      <text>已为您生成新的二维码</text>
+  </view>
+  <view class="codeBlock">
+    <image class="imgClass" src="../../../images/code_icon.png"></image>
+    <view>
+      <text>二维码编号： {{codeID}}</text>
+    </view>
+  </view>
+  <view>
+    <van-button type="primary" size="large" bindtap="backToIndexFunc">回到操作页面</van-button>
+  </view>
+</view>

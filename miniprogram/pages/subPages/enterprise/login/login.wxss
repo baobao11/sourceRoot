@@ -1,0 +1,8 @@
+/* miniprogram/pages/subPages/enterprise/login/login.wxss */
+.nav {
+  color: #0056d6c4;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

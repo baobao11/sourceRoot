@@ -1,0 +1,14 @@
+/* pages/subPages/scanError/scanError.wxss */
+.bigIcon {
+  display: flex;
+  justify-content: center;
+}
+.iconMargin {
+  margin-right: 10rpx;
+}
+.infoBlock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10rpx;
+}

@@ -1,0 +1,18 @@
+<!--miniprogram/pages/subPages/enterprise/manageProd/manageProd.wxml-->
+<view>
+  <view class="table">
+  <view class="tr bg-w">
+    <view class="th">产品名称</view>
+    <view class="th">详情</view>
+    <view class="th">操作</view>
+  </view>
+  <!-- wx:key有问题  wx:for="{{prodList}}" -->
+  <block>
+    <view class="tr" wx:for="{{prodList}}" wx:key="_id">
+      <view class="td">{{item.prodName}}</view>
+      <view class="td" data-item="{{item}}" bindtap="prodDetailFunc">查看详情</view>
+      <view class="td editbtn" data-id="{{item._id}}" bindtap="addInfoFunc"><text style="color:white;">经销商信息编辑</text></view>
+    </view>
+  </block>
+  </view>
+</view>

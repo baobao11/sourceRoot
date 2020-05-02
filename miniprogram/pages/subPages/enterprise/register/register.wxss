@@ -1,0 +1,5 @@
+/* miniprogram/pages/subPages/enterprise/register/register.wxss */
+.radioGroup {
+  display: flex;
+  flex-direction: flex-start;
+}

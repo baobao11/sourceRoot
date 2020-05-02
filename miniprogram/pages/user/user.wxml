@@ -1,0 +1,37 @@
+<!-- tabbar用户页面 -->
+<view>
+  <van-toast id="van-toast" />
+  <view class="userTop">
+    <!-- 登录成功显示 -->
+    <view wx:if="{{isLogin}}">
+      <view class="centerTop">
+        <view class="circle"></view>
+      </view>
+      <view class="centerTop">
+        <text style="font-size:12px;">用户: {{phoneNum}}</text>
+      </view>
+      <view class="centerTop">
+        <text>权限: {{identity}}</text>
+      </view>
+    </view>
+    <!-- 未登录时显示 -->
+    <view wx:else>
+      <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+        <view class="picker">
+          <!-- 当前选择：{{array[index]}} -->
+          <view class="loginReg">
+            <van-button plain type="primary">点击注册/登录</van-button>
+          </view>
+        </view>
+      </picker>  
+    </view>
+  </view>
+  <view>
+    <van-cell-group>
+      <van-cell wx:if="{{identityNum === 4}}" title="企业信息管理" bindtap="enterpriseInfoFunc" is-link/>
+      <van-cell wx:if="{{identityNum === 4 || identityNum === 9}}" title="修改密码" is-link bindtap="modifyPwdFunc"/>
+      <van-cell title="关于小程序" is-link bind:click="showMyProgram" />   
+      <van-cell wx:if="{{identityNum === 4 || identityNum === 9 || identityNum === 25}}" title="退出账号" is-link bindtap="logoutFunc" />        
+    </van-cell-group>
+  </view>
+</view>

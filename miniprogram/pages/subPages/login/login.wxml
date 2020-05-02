@@ -1,0 +1,33 @@
+<!-- 用户登录页面 -->
+<view>
+  <!-- <open-data type="userAvatarUrl" class='avatar'></open-data>
+    <open-data type="userNickName" class='name'></open-data> -->
+  <van-toast id="van-toast" />
+  <van-cell-group>
+    <van-field
+      bind:blur="phoneChange"
+      value="{{phoneNum}}"
+      label="手机号"
+      placeholder="请输入手机号"
+      border="{{ false }}"
+    />
+    <van-field
+      bind:blur="smsChange"
+      value="{{ sms }}"
+      center
+      clearable
+      label="短信验证码"
+      placeholder="请输入短信验证码"
+      border="{{ false }}"
+      use-button-slot
+    >
+    <van-button slot="button" size="small" type="primary" bindtap="confirmSmsFun">发送验证码</van-button>
+    </van-field>
+  </van-cell-group>
+</view>
+<view>
+  <van-button type="primary" size="large" bindtap="loginFun">登录</van-button>
+  <!-- <van-button round icon="https://b.yzcdn.cn/vant/icon-demo-1126.png"
+  color="#ffc300" bindtap="wechatLogFun"
+  >微信登录</van-button> -->
+</view>

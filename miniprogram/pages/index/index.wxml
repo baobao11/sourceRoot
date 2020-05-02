@@ -1,0 +1,15 @@
+<view>
+  <!-- 扫描二维码 -->
+  <button class="btn-index scanBtn" type="default" size="defaultSize" bindtap="scanCode">
+    <image class="imgClass" src="../../images/scan_icon.png" />
+    <view>
+      <text class="textClass">扫一扫</text>
+    </view>
+  </button>
+  <van-cell-group>
+    <van-cell wx:if="{{identity === 4 && prodOrSell === 'sellRadio'}}" title="管理产品信息" bindtap="manageProdFunc" is-link/>
+    <van-cell wx:if="{{identity === 9}}" title="查看审核列表" bind:click="checkFunc" is-link/>
+    <van-cell wx:if="{{identity === 4 && prodOrSell === 'prodRadio'}}" title="添加产品信息" bind:click="addProdFunc" is-link/>
+     <van-cell wx:if="{{identity === 4 && prodOrSell === 'prodRadio'}}" title="已添加的产品" bind:click="beAddedFunc" is-link/>
+  </van-cell-group>
+</view>

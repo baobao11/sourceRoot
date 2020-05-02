@@ -1,0 +1,30 @@
+<!--miniprogram/pages/subPages/enterprise/prodDetail/prodDetail.wxml-->
+  <scroll-view>
+    <van-cell-group>
+    <!-- 这里要补充还有经销商的信息 -->
+      <van-cell title="产品名称" label="{{currentItem.prodName}}"/>
+      <van-cell title="生产地" label="{{currentItem.prodorigin}}"/>
+      <van-cell title="生产日期" label="{{currentItem.proddate}}"/>
+      <van-cell title="产品描述" label="{{currentItem.proddescribe}}"/>
+      <van-cell title="规格" label="{{currentItem.prodspecs}}"/>
+      <van-cell title="生产企业" label="{{currentItem.prodcompany}}"/>
+      <van-cell title="生产基地名称" label="{{currentItem.prodbase}}"/>
+      <van-cell title="生产商联系方式" label="{{currentItem.prodcontact}}"/>
+      <van-cell title="营业执照号" label="{{currentItem.prodlicense}}"/>
+      <!-- <van-cell title="产品图片" label="{{currentItem.pic}}"/> -->
+      <van-cell title="经销商名称" label="{{currentItem.sellName}}"/>
+      <van-cell title="经销商地址" label="{{currentItem.sellArea}}"/>
+      <van-cell title="经销商联系方式" label="{{currentItem.sellcontact}}"/>
+      <van-cell title="经销商进货日期" label="{{currentItem.selldate}}"/>
+      <van-cell title="经销商营业执照号" label="{{currentItem.selllicense}}"/>
+    </van-cell-group>
+  </scroll-view>
+  <view class='second-code'>
+    <view class="img-box">
+      <image bindtap="previewImg" mode="scaleToFill" src="{{imagePath}}"></image>
+    </view>
+    <view class="canvas-box">
+      <canvas hidden="{{canvasHidden}}" style="width: 350rpx;height: 350rpx;" canvas-id="mycanvas"/>
+    </view>
+    <van-button class='downCode' type="primary" size="large" bindtap="downloadCode">点击下载二维码</van-button>
+  </view>

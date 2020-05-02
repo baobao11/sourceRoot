@@ -1,0 +1,68 @@
+{
+  "pages": [
+    "pages/user/user",
+    "pages/subPages/enterprise/login/login",
+    "pages/subPages/enterprise/manageProd/manageProd",
+    "pages/index/index",
+    "pages/subPages/enterprise/enterpriseInfo/enterpriseInfo",
+    "pages/subPages/enterprise/prodinfoInput/prodinfoInput",
+    "pages/subPages/enterprise/prodDetail/prodDetail",
+    "pages/subPages/enterprise/register/register",
+    "pages/subPages/login/login",
+    "pages/subPages/newCode/newCode",
+    "pages/subPages/touristSuccess/touristSuccess",
+    "pages/subPages/enterprise/sellerInput/sellerInput",
+    "pages/subPages/scanError/scanError",
+    "pages/subPages/admin/login/login",
+    "pages/subPages/modifyPwd/modifyPwd",
+    "pages/subPages/enterprise/forgetPwd/forgetPwd",
+    "pages/subPages/admin/check/check",
+    "pages/subPages/admin/checkDetail/checkDetail",
+    "pages/subPages/scanProd/scanProd",
+    "pages/subPages/enterprise/prodBeAdded/prodBeAdded",
+    "pages/subPages/about/about"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "农产品溯源",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "操作",
+        "iconPath": "images/operation_icon.png",
+        "selectedIconPath": "images/operation_active.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我",
+        "iconPath": "images/user_icon.png",
+        "selectedIconPath": "images/user_active.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "van-button": "/miniprogram_npm/vant-weapp/button/index",
+    "van-nav-bar": "/miniprogram_npm/vant-weapp/nav-bar/index",
+    "van-cell": "/miniprogram_npm/vant-weapp/cell/index",
+    "van-cell-group": "/miniprogram_npm/vant-weapp/cell-group/index",
+    "van-popup": "/miniprogram_npm/vant-weapp/popup/index",
+    "van-tabbar": "/miniprogram_npm/vant-weapp/tabbar/index",
+    "van-tabbar-item": "/miniprogram_npm/vant-weapp/tabbar-item/index",
+    "van-icon": "/miniprogram_npm/vant-weapp/icon/index",
+    "van-field": "/miniprogram_npm/vant-weapp/field/index",
+    "van-picker": "/miniprogram_npm/vant-weapp/picker/index",
+    "van-datetime-picker": "/miniprogram_npm/vant-weapp/datetime-picker/index",
+    "van-toast": "/miniprogram_npm/vant-weapp/toast/index",
+    "van-radio": "/miniprogram_npm/vant-weapp/radio/index",
+    "van-radio-group": "/miniprogram_npm/vant-weapp/radio-group/index",
+    "van-checkbox": "/miniprogram_npm/vant-weapp/checkbox/index",
+    "van-checkbox-group": "/miniprogram_npm/vant-weapp/checkbox-group/index",
+    "van-dialog": "/miniprogram_npm/vant-weapp/dialog/index"
+  }
+}
